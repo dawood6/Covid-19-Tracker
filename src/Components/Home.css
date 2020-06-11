@@ -1,0 +1,30 @@
+.corona_anime img {
+    animation: coranaround 3s linear infinite;
+    height: 150px;
+}
+
+@keyframes coranaround {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.head-1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
