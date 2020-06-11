@@ -6,6 +6,7 @@ const Charts = (props) => {
   const [data, setData] = useState([])
   const [hasError, setErrors] = useState(false)
 
+  // eslint-disable-next-line
   async function FetchItems() {
     try {
       const opts = {
@@ -21,9 +22,10 @@ const Charts = (props) => {
       setErrors(true)
     }
   }
+
   useEffect(() => {
     FetchItems()
-  }, FetchItems)
+  }, [FetchItems])
 
   const confirmedCases = data.map(coronaData => coronaData.confirmed)
   const recoveredCases = data.map(coronaData => coronaData.recovered)
